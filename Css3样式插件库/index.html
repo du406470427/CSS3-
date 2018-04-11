@@ -1,0 +1,84 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>My PPT</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+
+    <!--
+        
+        Impress.js doesn't depend on any external stylesheets. It adds all of the styles it needs for the
+        presentation to work.
+        
+        This style below contains styles only for demo presentation. Browse it to see how impress.js
+        classes are used to style presentation steps, or how to apply fallback styles, but I don't want
+        you to use them directly in your presentation.
+        
+        Be creative, build your own. We don't really want all impress.js presentations to look the same,
+        do we?
+        
+        When creating your own presentation get rid of this file. Start from scratch, it's fun!
+        
+    -->
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div class="step" data-x="0" data-y="0">
+        This is my first slide （显示的内容）
+    </div>
+
+    <div class="step" data-x="500" data-y="-400">
+        This is slide 2
+    </div>
+
+    <div class="step" data-x="500" data-y="-800">
+        第三张幻灯片其data-x值不变，data-y位置为-400，这将会是从顶部400px处滑入屏幕。
+        This is slide 3
+    </div>
+
+    <div class="step" data-x="1500" data-y="-2700" data-scale="0.5">
+        This is slide 4
+    </div>
+
+    <div class="step" data-x="0" data-y="-1600" data-rotate="90">
+        This is slide 5
+    </div>
+
+
+    <div class="step" data-x="600" data-y="-2000" data-rotate-x="90" data-rotate-y="-60" data-rotate-z="20" data-scale="4">
+        This is slide 7 and it has a 3D transition AND a scale.
+    </div>
+
+
+</div>
+
+
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+</body>
+</html>
+
+
